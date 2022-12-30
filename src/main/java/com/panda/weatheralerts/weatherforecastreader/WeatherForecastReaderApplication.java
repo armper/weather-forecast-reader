@@ -29,31 +29,4 @@ public class WeatherForecastReaderApplication {
 		SpringApplication.run(WeatherForecastReaderApplication.class, args);
 	}
 
-	// Populate User table with test data spring boot command line runner
-	@Bean
-	public CommandLineRunner demo(UserRepository repository) {
-		return args -> {
-			/* repository.deleteAll();
-
-			List<WeatherUser> testUsers = new ArrayList<>();
-			testUsers.add(generateRandomTestUser());
-
-			repository.save(generateRandomTestUser());
-
-			weatherApiProcessor.processWeatherApi(); */
-
-		};
-
-	}
-
-	// Method to Generate random test user
-	private WeatherUser generateRandomTestUser() {
-		WeatherUser user = new WeatherUser();
-		user.setEmail("aleoperea@yahoo.com");
-		user.setLat(38.8894);
-		user.setLon(-77.0352);
-
-		return user;
-	}
-
 }

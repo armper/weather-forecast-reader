@@ -3,15 +3,17 @@ package com.panda.weatheralerts.weatherforecastreader.webcontroller;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class ApplyRequest {
+@ToString
+public class WeatherUserRequest {
     private String email;
-    private int windMin;
-    private int windMax;
-    private int tempMin;
-    private int tempMax;
+    private Integer windMin;
+    private Integer windMax;
+    private Integer tempMin;
+    private Integer tempMax;
 
 }
